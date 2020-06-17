@@ -1,0 +1,7 @@
+
+{# Display a sidebar menu item #}
+{% macro sidebarMenuItem(link, pageUrl, type, title) %}
+  <a href="{{ link }}" class="list-group-item list-group-item-action list-group-item-primary {{ "active" if link == pageUrl }} et-side-menu__item et-side-menu__item_{{ type }}">
+      {{ title }}
+  </a>
+{% endmacro %}

@@ -5,6 +5,21 @@
   </a>
 {% endmacro %}
 
+{% macro screenshotBlock(image, alt) %}
+<li class="row mb-5">
+  <div class="col-3">
+    {% if image %}
+      <a href="{{ site.imagesUrl }}{{ image }}" target="_blank">
+        <img class="img-fluid" src="{{ site.imagesUrl }}{{ image }}" title="Click to see full image" alt="{{ alt }}" />
+      </a>
+    {% endif %}
+  </div>
+  <div class="col-9">
+    {{ caller() | safe }}
+  </div>
+</li>
+{% endmacro %}
+
 {% macro testimonialBlock(testimonial) %}
   <li class="inv-list-item">
     {# Testimonial title #}

@@ -12,7 +12,7 @@
 {% endmacro %}
 
 {% macro screenshotBlock(screenshot) %}
-<li class="row mb-5">
+<li class="row inv-content-section">
   <div class="col-3">
     <a href="{{ site.baseImageUrl }}{{ screenshot.image }}" target="_blank">
       <img class="img-fluid" src="{{ site.baseImageUrl }}{{ screenshot.image }}" title="Click to see full image" alt="{{ screenshot.alt }}" />
@@ -22,6 +22,25 @@
     {{ screenshot.details | safe }}
   </div>
 </li>
+{% endmacro %}
+
+{% macro reviewBlock(review) %}
+  <li class="row border-bottom mb-4">
+    <div class="col-2 text-center">
+      <img class="img-fluid" src="{{ site.baseImageUrl }}{{ review.image }}" alt="{{ review.title }}">
+    </div>
+    <div class="col">
+      <h3>{{ review.title }}</h3>
+
+      <blockquote class="blockquote font-weight-light font-italic">
+        <p>&ldquo;{{ review.quote | safe }}&rdquo;</p>
+      </blockquote>
+
+      {% if review.link %}
+        <p><a href="{{ review.link }}" target="_blank">Read More</a></p>
+      {% endif %}
+    </div>
+  </li>
 {% endmacro %}
 
 {% macro testimonialBlock(testimonial) %}

@@ -5,9 +5,19 @@ seoTitle: diskSpace Explorer
 
 {% from "blocks/pages.njk" import screenshotImage with context %}
 
+<div class="row inv-content-section">
+  <div class="col-4">
+    <img class="img-fluid" src="{{ site.baseImageUrl }}/products/diskspaceexplorer/boxes/diskspaceexplorer-box.jpg" alt="diskSpace Explorer">
+  </div>
+  <div class="col-8">
+    <p>diskSpace Explorer is a professional tool, powerful, intuitive and easy to use, that allows the network professional to manage the server hard disk space and make intelligent allocation decisions for its capacity... yet it is simple enough for the average computer user at home on non-networked computers to allocate and manage hard drive space the way professionals do.</p>
+    <p><a class="btn btn-primary" href="#" role="button">Free Download</a></p>
+  </div>
+</div>
+
 <h2>Screenshots</h2>
 
-<div class="row mb-5">
+<div class="row inv-content-section">
   {# Display the first 4 screenshots #}
   {% for screenshot in products[product].screenshots.slice(0, 4) %}
     <div class="col">

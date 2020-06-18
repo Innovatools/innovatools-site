@@ -7,7 +7,7 @@ layout: layouts/page-left-sidebar.njk
 {{ content | safe }}
 
 <ul class="inv-list">
-  {% for testimonial in testimonials[product] %}
+  {% for testimonial in products[product].testimonials %}
     {{ testimonialBlock(testimonial) }}
   {% endfor %}
 </ul>

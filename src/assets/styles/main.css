@@ -65,10 +65,12 @@ a, a:focus, a:hover {
 
 .inv-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .inv-list-item {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .inv-list-item::before {

@@ -1,0 +1,29 @@
+--- 
+title: diskSpace Explorer 
+seoTitle: diskSpace Explorer 
+---
+
+{% from "blocks/pages.njk" import screenshotImage with context %}
+
+<h2>Screenshots</h2>
+
+<div class="row mb-5">
+  {# Display the first 4 screenshots #}
+  {% for screenshot in products[product].screenshots.slice(0, 4) %}
+    <div class="col">
+      {{ screenshotImage(screenshot, "/diskspaceexplorer/screenshots/") }}
+    </div>
+  {% endfor %}
+</div>
+
+<h2>Key Features</h2>
+
+<ul class="inv-list">
+  <li class="inv-list-item">View the hard disk, recognize directories which are large, and examine for wasted space and useless files... all done by an intuitive, graphical, view and click, interface.</li>
+  <li class="inv-list-item">Easily navigate through your files and folders by clicking anywhere on the pie chart. Click on pie sections to zoom into the subfolders of the current folder. Click anywhere outside the pie chart to go back to the parent folder. Move the mouse cursor over pie sections to get item information. Right click to get the Explorer context menu and explorer, copy or delete the selected folder.</li>
+  <li class="inv-list-item">diskSpace Explorer tells you how much space is wasted due to the drive cluster size and how your drive would look and how much space would be wasted with another cluster size or file system (such as FAT32). This feature can help you make intelligent choices on how to repartition your hard disk to reduce the wasted space. It can also help you measure the space required to copy your files to CD-ROMs or floppy disks.</li>
+  <li class="inv-list-item">diskSpace Explorer helps you increase your available disk space, by sending individual folders to the Recycle Bin or another drive, or by archiving folders into compressed ZIP files.</li>
+  <li class="inv-list-item">Automatically scan selected drives when the program loads, change the pie chart colors, and choose to show or ignore individual files and wasted space.</li>
+  <li class="inv-list-item">Print or export reports containing detailed information about folders and drives or copy pie charts onto the clipboard in either metafile or bitmap format.</li>
+  <li class="inv-list-item">Scan NTFS, FAT32, FAT16 and FAT12 drives. Scan local hard disks, network disks, or USB drives.</li>
+</ul>

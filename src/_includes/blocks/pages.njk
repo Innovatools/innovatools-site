@@ -5,23 +5,27 @@
   </a>
 {% endmacro %}
 
-{% macro screenshotBlock(image, alt) %}
+{% macro screenshotImage(screenshot, link) %}
+  <a href="{{ link | url }}">
+    <img class="img-fluid" src="{{ site.baseImageUrl }}{{ screenshot.image }}" title="More screenshots" alt="{{ screenshot.alt }}" />
+  </a>
+{% endmacro %}
+
+{% macro screenshotBlock(screenshot) %}
 <li class="row mb-5">
   <div class="col-3">
-    {% if image %}
-      <a href="{{ site.imagesUrl }}{{ image }}" target="_blank">
-        <img class="img-fluid" src="{{ site.imagesUrl }}{{ image }}" title="Click to see full image" alt="{{ alt }}" />
-      </a>
-    {% endif %}
+    <a href="{{ site.baseImageUrl }}{{ screenshot.image }}" target="_blank">
+      <img class="img-fluid" src="{{ site.baseImageUrl }}{{ screenshot.image }}" title="Click to see full image" alt="{{ screenshot.alt }}" />
+    </a>
   </div>
   <div class="col-9">
-    {{ caller() | safe }}
+    {{ screenshot.details | safe }}
   </div>
 </li>
 {% endmacro %}
 
 {% macro testimonialBlock(testimonial) %}
-  <li class="inv-list-item">
+  <li class="inv-list-item mb-0">
     {# Testimonial title #}
     {% if testimonial.title %}
       <h2 class="h4">{{ testimonial.title }}</h2>

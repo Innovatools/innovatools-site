@@ -1,0 +1,19 @@
+- image: /products/diskspaceexplorer/screenshots/diskspaceexplorer-pie-chart-page-screenshot.png
+  alt: diskSpace Explorer - Pie Chart Page Screenshot
+  details: <b>The Pie Chart Page</b> displays the folder pie chart, a graphical display of the contents of the current folder. The pie chart can be used to easily navigate through your files and folders. Click on pie sections to zoom into the subfolders of the current folder. Click anywhere outside the pie chart to go back to the parent folder. When moving the cursor over a section of the pie chart, you'll get detailed information on that section such as the name, type, full path, size, amount of wasted space, etc. When you right click your mouse on a file or folder, you'll get a context menu to perform various functions on them (explore, copy, delete). More about the Pie Chart...
+
+- image: /products/diskspaceexplorer/screenshots/diskspaceexplorer-folder-information-page-screenshot.png
+  alt: diskSpace Explorer - Folder Information Page Screenshot
+  details: <b>The Folder Information Page</b> displays detailed information about the current folder (the amount of used, allocated and wasted space, the number of files and subfolders, the creation date and the date of the last access and change, the attributes, etc.). The space information is reported for both the folder (without subfolders) and for the folder tree (the folder including subfolders). You may export this information to a text file by using the Export Folder Report option of the File Menu.
+
+- image: /products/diskspaceexplorer/screenshots/diskspaceexplorer-subfolders-page-screenshot.png
+  alt: diskSpace Explorer - Subfolders Page Screenshot
+  details: <b>The Subfolders Page</b> contains a detailed list of the subfolders of the current folder. For each subfolder diskSpace Explorer displays the name, type, amount of space used, allocated and wasted, the number of objects and the date of the last access and change. You can sort the list by any of these fields. To zoom in to one of the subfolders, simply double-click its entry in the list. To zoom out to the parent folder, click on the Up One Level button.
+
+- image: /products/diskspaceexplorer/screenshots/diskspaceexplorer-wasted-space-page-screenshot.png
+  alt: diskSpace Explorer - Wasted Space Page Screenshot
+  details: <b>The Wasted Space Page</b> reports how much space is wasted by the current folder (or on the current drive if the current folder is the drive root folder) because of the drive cluster size. The page also reports how much space would be wasted if the current folder were located on a drive with a different cluster size.
+
+- image: /products/diskspaceexplorer/screenshots/diskspaceexplorer-free-some-space-page-screenshot.png
+  alt: diskSpace Explorer - Free Some Space Page Screenshot
+  details: Although the main purpose of diskSpace Explorer is to help you quickly find out how your disk space is being used, the program also offers you a few ways to free up some disk space. You may access them by selecting the <b>Free Some Space Page</b>. You may compress and move folders with all their subfolders and files to ZIP archives, in order to gain disk space. You may also automatically move folders to drives with smaller cluster sizes to reduce the wasted space or you may delete the folders you don't really need.

@@ -3,7 +3,7 @@
  *************************************/
 
 body {
-  background: url('https://innovatools.b-cdn.net/images/theme/main-background.png');
+  background: url('https://innovatools.b-cdn.net/images/theme/backgrounds/main-background.png');
 }
 
 a, a:focus, a:hover {
@@ -20,7 +20,7 @@ h2, .h2 {
  *************************************/
 
 .inv-header-body {
-    background: url('https://innovatools.b-cdn.net/images/theme/header-background.png');
+    background: url('https://innovatools.b-cdn.net/images/theme/backgrounds/header-background.png');
 }
 
 .inv-container {
@@ -31,6 +31,54 @@ h2, .h2 {
 .inv-header-container {
     background: #2d4f6f;
     background: linear-gradient(to bottom, #2d4f6f 0%,#376088 100%);
+}
+
+.inv-navbar-container {
+    background: #ACA9AB;
+    background: linear-gradient(to bottom, #ACA9AB 0%,#646464 100%);
+    border-top: 1px solid #646464;
+    border-bottom: 1px solid #000;
+}
+
+.navbar-nav {
+  background: url('https://innovatools.b-cdn.net/images/theme/backgrounds/navbar-background.png');
+  background-size: auto 44px;
+  /* border-bottom: 1px inset #656565; */
+  border-left: 1px inset #fff;
+  border-right: 1px inset #b7b7b7;
+  padding: 1px 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    margin-left: 4vw;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  /* background-color: rgba(79, 121, 190, 0.5); */
+  /* background-color: rgba(176, 195, 237, 0.5); */
+  background: linear-gradient(to bottom, rgba(193, 207, 241, 0.5) 0%,rgba(106, 147, 221, 0.5) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 /**************************************
@@ -87,6 +135,14 @@ h2, .h2 {
   /* color: #FA1D24; */
   color: #CA4F01;
   margin-right: 1rem;
+}
+
+/* Buttons */
+
+.btn-primary {
+  color: #fff;
+  background-color: #4f79be;
+  border-color: #4f79be;
 }
 
 /**************************************

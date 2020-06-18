@@ -1,8 +1,24 @@
 <div class="inv-header-body">
-    <div class="container inv-container inv-header-container">
-        <header class="pt-3 pb-4">
-            <img src="https://innovatools.b-cdn.net/images/branding/logo/innovatools-logo.png">
-        </header>
-    </div>
-</div>
+  <div class="container inv-container inv-header-container">
+    <header class="pt-3 pb-4">
+      <img src="https://innovatools.b-cdn.net/images/branding/logo/innovatools-logo.png">
+    </header>
+  </div>
+  <div class="container inv-container inv-navbar-container">
 
+    <nav class="navbar navbar-expand-sm navbar-dark py-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="{{ '/' | url }}">home</a>
+          <a class="nav-item nav-link" href="{{ '/products/' | url }}">products</a>
+          <a class="nav-item nav-link" href="{{ '/download/' | url }}">download</a>
+          <a class="nav-item nav-link" href="{{ '/support/' | url }}">support</a>
+          <a class="nav-item nav-link" href="{{ '/about/' | url }}">about us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

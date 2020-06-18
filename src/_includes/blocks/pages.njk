@@ -1,7 +1,29 @@
-
 {# Display a sidebar menu item #}
 {% macro sidebarMenuItem(link, pageUrl, type, title) %}
-  <a href="{{ link }}" class="list-group-item list-group-item-action list-group-item-primary {{ "active" if link == pageUrl }} et-side-menu__item et-side-menu__item_{{ type }}">
-      {{ title }}
+  <a href="{{ link }}" class="list-group-item list-group-item-action list-group-item-primary {{ " active" if link == pageUrl }} et-side-menu__item et-side-menu__item_{{ type }}">
+    {{ title }}
   </a>
+{% endmacro %}
+
+{% macro testimonialBlock(testimonial) %}
+  <li class="inv-list-item">
+    {# Testimonial title #}
+    {% if testimonial.title %}
+      <h2 class="h4">{{ testimonial.title }}</h2>
+    {% endif %}
+
+    {# Testimonial (block)quote #}
+    {% if testimonial.quote %}
+      <blockquote class="blockquote font-weight-light font-italic">
+        <p>"{{ testimonial.quote | safe }}"</p>
+      </blockquote>
+    {% endif %}
+
+    {# Testimonial more link #}
+    {% if testimonial.moreUrl %}
+      <p>
+        <a href="{{ testimonial.moreUrl }}">Read More</a>
+      </p>
+    {% endif %}
+  </li>
 {% endmacro %}

@@ -1,0 +1,17 @@
+---
+title: diskSpace Explorer Testimonials
+seoTitle: diskSpace Explorer Testimonials
+---
+
+{% from "blocks/pages.njk" import testimonialBlock with context %}
+
+<ul class="inv-list">
+  {% for testimonial in testimonials.diskspaceexplorer %}
+    {{ testimonialBlock(testimonial) }}
+  {% endfor %}
+</ul>
+
+
+
+
+

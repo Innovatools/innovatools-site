@@ -1,3 +1,68 @@
+/**************************************
+ *	Top Level Elements
+ *************************************/
+
+body {
+  background: url('https://innovatools.b-cdn.net/images/theme/main-background.png');
+}
+
+a, a:focus, a:hover {
+    color: #4f79be;
+}
+
+/**************************************
+ *	Site Header 
+ *************************************/
+
+.inv-header-body {
+    background: url('https://innovatools.b-cdn.net/images/theme/header-background.png');
+}
+
+.inv-container {
+  box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  clip-path: inset(0px -15px 0px -15px);
+}
+
+.inv-header-container {
+    background: #2d4f6f;
+    background: linear-gradient(to bottom, #2d4f6f 0%,#376088 100%);
+}
+
+/**************************************
+ *	Main
+ *************************************/
+
+.inv-main-container {
+    background: #fff;
+}
+
+/**************************************
+ *	Sectionbar
+ *************************************/
+
+.inv-section-menu {
+  background: #efefef;
+  height: 80vh;
+}
+
+.inv-section-menu__item {
+  background-color: inherit;
+  border-color: #fff;
+  color: #4f79be;
+  font-weight: bold;
+}
+
+.inv-section-menu__item.active {
+  color: #fff;
+  background-color: #4f79be;
+}
+
+/**************************************
+ *	Common Content
+ *************************************/
+
+/* Bullet lists */
+
 .inv-list {
   list-style: none;
 }
@@ -13,39 +78,12 @@
   margin-right: 1rem;
 }
 
-body {
-  background: url('https://innovatools.b-cdn.net/images/theme/main-background.png');
-}
+/**************************************
+ *	Site Footer
+ *************************************/
 
-.inv-header-body {
-    background: url('https://innovatools.b-cdn.net/images/theme/header-background.png');
-}
-
-
-
-.inv-container {
-  /* box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
-  box-shadow: 0 0 15px rgba(0,0,0,0.75);
-  clip-path: inset(0px -15px 0px -15px);
-}
-
-.inv-header-container {
-    background: #2d4f6f;
-    background: linear-gradient(to bottom, #2d4f6f 0%,#376088 100%);
-}
-
-.inv-main-container {
-    background: #fff;
-}
-
-
-.inv-footer__divider {
+ .inv-footer__divider {
   background: #eee;
   height: 0.5rem;
   margin-bottom: 0.5rem;
 }
-
-
-/* .blockquote {
-  font-weight: 300;
-} */

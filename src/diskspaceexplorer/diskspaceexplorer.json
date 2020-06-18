@@ -1,4 +1,5 @@
 {
     "layout": "layouts/page-left-sidebar",
+    "product": "diskspaceexplorer",
     "sidebar": "products/diskspaceexplorer"
 }
